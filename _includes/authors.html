@@ -1,0 +1,17 @@
+<div id="authors" class="well">
+	<h1>Authors</h1>
+	{% for author in authors %}
+	<div class="author">
+		<div class="pull-right img">
+			<img src="http://en.gravatar.com/avatar/{{author[1].gravatar}}">
+		</div>
+		<h2>{{author[1].name}}</h2>
+		<small class="muted">({{author[0]}})</small>
+		<p>
+			<b>Position:</b> {{author[1].position}}<br>
+			<b>Github:</b> <a href="http://www.github.com/{{author[1].github}}">{{author[1].github}}</a><br>
+			<b>Twitter:</b> <a href="http://www.twitter.com/{{author[1].twitter}}">@{{author[1].twitter}}</a><br>
+		</p>
+	</div>
+	{% endfor %}
+</div>

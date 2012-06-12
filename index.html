@@ -1,2 +1,20 @@
-<h1>Comoyo</h1>
-
+---
+layout: default
+---
+{% assign authors = site.authors %}
+<div class="row">
+	<div class="span8 white" id="posts">
+		{% for post in site.posts %}
+		{% assign author = site.authors[post.author] %}
+		<article>
+			{% include article_header.html %}			
+			</header>
+			<p>{{ post.content }}</p>
+			<a href="{{post.url}}#disqus_thread">Comments</a>
+		</article>
+		{% endfor %}
+	</div>
+	<div class="span4" id="sidebar">
+		{% include authors.html %}
+	</div>
+</div>

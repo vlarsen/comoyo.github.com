@@ -1,0 +1,18 @@
+---
+layout: default
+---
+{% assign author = site.authors[page.author] %}
+<div class="row">
+	<div class="span8 white">
+		<article>
+			{% include article_header.html %}
+			{{content}}
+			{% include comments.html %}
+		</article>
+	</div>
+	<div class="span4" id="sidebar">
+		<div class="well">
+			{% include author.html %}
+		</div>
+	</div>
+</div>

@@ -1,0 +1,19 @@
+@font-face {
+  font-family: 'ComoyoQuickBold';
+  src: url("/assets/fonts/comoyoquickbold07-webfont.eot");
+  src: url("/assets/fonts/comoyoquickbold07-webfont.ie.eot") format("embedded-opentype"), url("/assets/fonts/comoyoquickbold07-webfont.woff") format("woff"), url("/assets/fonts/comoyoquickbold07-webfont.svg#ComoyoQuickBold") format("svg");
+  font-weight: normal;
+  font-style: normal; 
+}
+
+@font-face {
+  font-family: 'ComoyoQuickRegular';
+  src: url("/assets/fonts/comoyoquickregular06-webfont.eot");
+  src: url("/assets/fonts/comoyoquickregular06-webfont.ie.eot") format("embedded-opentype"), url("/assets/fonts/comoyoquickregular06-webfont.woff") format("woff"), url("/assets/fonts/comoyoquickregular06-webfont.svg#ComoyoQuickRegular") format("svg");
+  font-weight: normal;
+  font-style: normal; 
+}
+
+body {
+  -webkit-font-smoothing: antialiased !important;
+}
